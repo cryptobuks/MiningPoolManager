@@ -21,8 +21,3 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build'
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    pathtoPublish: '$(System.DefaultWorkingDirectory)/dist'
-    artifactName: drop
